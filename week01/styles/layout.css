@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: .5rem;
+    background-color: #3ca1e0;
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+nav {
+    max-width: 95vw;
+    /* 90% of the viewport width */
+    margin: 0 auto 2rem;
+    /* center the nav and add some space below */
+}
+
+div {
+    display: flex;
+}
+
+main {
+    margin: .5rem;
+    border: solid black;
+    padding: 1rem;
+    background-color: #eee;
+}
+
+aside {
+    margin: .5rem;
+    border: solid blue;
+    padding: 1rem;
+    background-color: #eee;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    background-color: #189f82;
+    align-items: center;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    padding: .75rem;
+    color: #eee;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: rgb(188, 15, 15);
+}
