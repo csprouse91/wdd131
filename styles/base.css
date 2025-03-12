@@ -1,7 +1,132 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Header */
+body {
+    font-family: "Monsterrat", "Funnel Sans", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: .75rem;
+    background-color: var(--indigo-dye);
+    color: var(--cream);
+}
+
+main p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+nav {
+    max-width: 100vw;
+    margin: 0 auto 1rem;
+    background-color: var(--amber);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+.nav-list li {
+    flex: 1 1 auto;
+}
+
+
+.nav-list a {
+    display: block;
+    padding: .75rem;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    color: var(--cream);
+}
+
+main {
+    margin: .5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 95vw;
+    max-height: 95vw;
+    margin: 0 auto;
+}
+
+hr {
+    border: 1px solid var(--indigo-dye);
+    justify-self: center;
+    width: 50%;
+    margin: .5rem;
+}
+
+.card {
+    background-color: var(--cream);
+    border: 1px solid var(--indigo-dye);
+    max-width: 66vw;
+    height: auto;
+}
+
+h2 {
+    color: var(--cream);
+    background-color: var(--indigo-dye);
+    padding: .5rem;
+    text-align: center;
+}
+
+.country {
+    background-color: var(--cream);
+    color: var(--indigo-dye);
+    padding: 0;
+    margin: 0;
+}
+
+.profilepicture {
+    margin: .5rem;
+    float: right;
+    width: 140px;
+    height: auto;
+}
+
+.flag {
+    float: left;
+    margin: .5rem;
+    width: auto;
+    height: 103px;
+}
+
+.resources ul {
+    text-align: center;
+    list-style: none;
+    padding: .5rem;
+}
+
+.resources li {
+
+    margin: .5rem;
+}
+
+footer {
+    background-color: var(--indigo-dye);
+    font-size: .75rem;
+    color: var(--cream);
+    text-align: center;
+    padding: .5rem;
+}
+
+/* Colors */
+:root {
+    /* CSS HEX */
+    --indigo-dye: #124e78ff;
+    --cream: #f0f0c9ff;
+    --amber: #f2bb05ff;
+    --syracuse-red-orange: #d74e09ff;
+    --blood-red: #6e0e0aff;
+    /* Reference: https://coolors.co/124e78-f0f0c9-f2bb05-d74e09-6e0e0a */
+}

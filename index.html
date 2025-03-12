@@ -5,43 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Casey Sprouse</title>
-    <meta name="description" content="Casey Sprouse WDD 131 - Dynamic Web Fundamentals Course Landing Page Week 1 Assignment">
+    <meta name="description"
+        content="Casey Sprouse WDD 131 - Dynamic Web Fundamentals Course Landing Page Week 1 Assignment">
     <meta name="author" content="Casey Sprouse">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,500;1,500&family=Montserrat:ital@0;1&display=swap"
+        rel="stylesheet">
+    <script src="/scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>WDD 131: Dynamic Web Fundamentals - Casey Sprouse</h1>
         <nav id="main-nav">
-            <ul>
+            <ul class="nav-list">
                 <li><a href="https://www.linkedin.com/in/casey-sprouse-1b7a58190/" target="_blank">LinkedIn</a></li>
                 <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/82?lang=eng&id=p10#p10">Scripture</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/82?lang=eng&id=p10#p10"
+                        target="_blank">Scripture</a>
+                </li>
                 <li><a href="placeholder">Final Project</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="card">
+        <section class="card aboutme">
             <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="profilepicture">
+            <img class="profilepicture" src="images/profile.jpg" alt="profilepicture">
             <p>My name is Casey Sprouse. I was born in Salt Lake City, Utah and grew up in Southern California
                 until I was 14. I have lived in Utah since then, and currently reside in Bountiful City. I work as
                 a city worker for the water department while I go to school to earn my degree through BYU-Idaho. I
-                am married and have 4 children, expecting our 5th in February. I enjoy the challenge of learning
-                new things and am excited to learn more about web development.
+                am married and have 5 children. We just welcomed our newest baby girl on March 1st, 2025.
             </p>
-        </section>
-        <section class="card">
-            <h2>Utah, USA</h2>
-            <img src="/images/usaflag.jpg" alt="usaflag">
+            <h2 class="country">Utah, USA</h2>
+            <hr>
+            <img class="flag" src="/images/usaflag.jpg" alt="usaflag">
             <p>The United States is massive, and well-known. It stretches "from sea to shining sea" and
                 is home to many people from various cultures and backgrounds. Utah is part of the midwest
-                region and is known for its beatiful mountains. Utah is also home to some of the most Temples
+                region and is known for its beatiful mountains. Utah is also home to a large amount of Temples
                 of the Church of Jesus Christ of Latter-day Saints.
             </p>
+        </section>
+        <section class="card resources">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://coolors.co/124e78-f0f0c9-f2bb05-d74e09-6e0e0a" target="_blank">Coolors Pallette
+                        Generator</a></li>
+                <li><a href="https://fonts.google.com/selection?categoryFilters=Feeling:%2FExpressive%2FCalm"
+                        target="_blank">Google Fonts</a></li>
+                <li><a href="https://video.byui.edu/media/t/1_b7w4k0v0" target="_blank">CSS Flex Video</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Data_structures"
+                        target="_blank">MDN</a></li>
+                <li><a href="https://squoosh.app/" target="_blank">Squoosh App</a></li>
+            </ul>
         </section>
     </main>
     <footer>
