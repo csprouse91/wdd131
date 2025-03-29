@@ -1,0 +1,23 @@
+/* CSS HSL */
+:root {
+    --antiflash-white: hsla(220, 8%, 92%, 1);
+    --cerulean: hsla(194, 100%, 27%, 1);
+    --cadet-gray: hsla(197, 21%, 70%, 1);
+    --cerulean-2: hsla(193, 100%, 28%, 1);
+    --moonstone: hsla(188, 99%, 38%, 1);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 614px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-gap: 15px;
+    }
+
+}
