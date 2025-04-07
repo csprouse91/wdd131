@@ -18,30 +18,56 @@
     <main>
         <div class="hero">
             <picture>
-                <source media="(min-width: 1000px)" srcset="images">
-                <source media="(min-width: 500px)" srcset="images/">
-                <img src="images/" alt="" width="500" height="250">
+                <source media="(min-width: 1000px)" srcset="images/rome-hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/rome-hero-medium.webp">
+                <img src="images/rome-hero-small.webp" alt="Colosseum side view with sun glare" width="500"
+                    height="750">
             </picture>
         </div>
         <section class="card" id="data">
             <h2>Data</h2>
-
+            <ul id="placeData">
+                <li>
+                    <label for="country">Country: </label><span id="country" name="country"></span>
+                </li>
+                <li>
+                    <label for="population">Population: </label><span id="population" name="population"></span>
+                </li>
+                <li>
+                    <label for="area">Area: </label><span id="area" name="area"></span>
+                </li>
+                <li>
+                    <label for="language">Language: </label><span id="language" name="language"></span>
+                </li>
+                <li>
+                    <label for="currency">Currency: </label><span id="currency" name="currency"></span>
+                </li>
+                <li>
+                    <label for="timezone">Timezone: </label><span id="timezone" name="timezone"></span>
+                </li>
+                <li>
+                    <label for="callingCode">Calling Code: </label><span id="callingCode" name="callingCode"></span>
+                </li>
+                <li>
+                    <label for="internetTld">Internet TLD: </label><span id="internetTld" name="internetTld"></span>
+                </li>
+            </ul>
         </section>
         <section class="card" id="weather">
             <h2>Weather</h2>
             <img svg src="images/weather.svg" alt="Weather Icon" id="weatherIcon">
             <ul id="weatherData">
                 <li>
-                    <label for="temperature">Temperature: </label><span id="temperature"></span>
+                    <label for="temperature">Temperature: </label><span id="temperature" name="temperature"></span>
                 </li>
                 <li>
-                    <label for="conditions">Conditions: </label><span id="conditions"></span>
+                    <label for="conditions">Conditions: </label><span id="conditions" name="conditions"></span>
                 </li>
                 <li>
-                    <label for="wind">Wind Speed: </label><span id="wind"></span>
+                    <label for="wind">Wind Speed: </label><span id="wind" name="wind"></span>
                 </li>
                 <li>
-                    <label for="windChill">Feels Like: </label><span id="windChill"></span>
+                    <label for="windChill">Feels Like: </label><span id="windChill" name="windChill"></span>
                 </li>
             </ul>
         </section>
