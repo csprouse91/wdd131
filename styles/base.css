@@ -8,11 +8,23 @@ body {
 }
 
 h1 {
+    grid-column: 1 / -1; /* Span across all columns */
     text-align: center;
     padding: .75rem;
     background-color: var(--indigo-dye);
     color: var(--cream);
 }
+
+ /* Select heading span by ID */
+#course-title {
+    display: block;
+    text-align: center;
+    padding: .75rem;
+    background-color: var(--indigo-dye);
+    color: var(--cream);
+}
+
+
 
 main p {
     font-size: 1.2rem;
