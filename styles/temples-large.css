@@ -7,17 +7,19 @@
     --moonstone: hsla(188, 99%, 38%, 1);
 }
 
-@media (min-width: 640px) {
-    header h1 {
+@media only screen and (min-width: 640px) {
+    header span {
         font-size: 2.5rem;
         float: left;
-        margin: 1rem;
+        margin: .5rem;
     }
-
+    #menu {
+        display: none;
+    }
     main h1 {
         font-size: 2rem;
         margin: 0 auto;
-        padding: 1rem;
+        padding: .5rem;
     }
 
     .container {
@@ -28,11 +30,7 @@
         margin: 0 auto;
         padding: 0.5rem .5rem;
     }
-
-    #menu {
-        display: none;
-    }
-
+    
     .navigation {
         flex-direction: row;
         font-size: 1.5rem;
@@ -47,7 +45,8 @@
         flex: 1 1 auto;
     }
 
-    .navigation a:hover {
+    .navigation a:hover,
+    .navigation a:active {
         background-color: var(--moonstone);
     }
 
