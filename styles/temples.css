@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-header span {
+header h1 {
+    text-align: center;
+    justify-content: center;
     font-size: 1.5rem;
     padding: 1rem;
-    display: flex;
-    justify-content: center;
-
+    
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -20,11 +20,12 @@ main {
 }
 
 header {
+    display: flex;
     background-color: var(--top);
     color: var(--text);
 }
 
-h1 {
+h2 {
     text-align: center;
     font-size: 1.5rem;
 }

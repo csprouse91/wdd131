@@ -12,7 +12,8 @@
 }
 
 body {
-    max-width: 1920px;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vw;
 }
 
 header {
@@ -31,15 +32,19 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-}
-
-.hero {
-    width: 100%;
-    height: auto;
+    border-top: .5rem solid #ffb302;
     
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom: .5rem solid #8e001c;
+}
+
+.card {
+    
+}
 
 #weatherIcon {
     width: 50px;
