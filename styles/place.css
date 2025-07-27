@@ -39,14 +39,112 @@ main {
 .hero img {
     width: 100%;
     height: auto;
-    border-bottom: .5rem solid #8e001c;
+    border-bottom: .25rem solid #8e001c;
 }
 
 .card {
-    
+    background-color: light grey;
+    border-bottom: 1px solid #8e001c;
+
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 5px;
+    grid-template-columns: 1 fr 1fr;
+}
+
+.card ul li {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.card ul li label {
+    font-weight: bold;
+    grid-column: 1/2;
+    text-align: right;
+}
+
+.card ul li span {
+    grid-column: 2/3;
+    text-align: left;
+}
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Pseudo-element for the temperature */
+#temperature::after {
+    content: " °C";
 }
 
 #weatherIcon {
     width: 50px;
     height: 50px;
+}
+
+footer {
+    background-color: #8e001c;
+    color: #ffb302;
+    text-align: center;
+}
+
+/* Larger view */
+@media (min-width: 600px) {
+    /* Clear CSS for #weather */
+    #weather {
+        position: absolute;
+        bottom: 120px;
+        right: 20px;
+        display: block;
+        padding: 0px;
+
+    }
+    #weather h2::after {
+        content: url("../images/weather.svg");
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    
+    #weatherIcon {
+        display: none;
+    }
+
+    #data {
+        position: absolute;
+        top: 120px;
+        left: 20px;
+    }
+    .hero img {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .card {
+        background-color: hsla(180, 40%, 45%, 0.8);
+        border: 1px solid #8e001c;
+    }
+   .card h2 {
+        font-size: 1.5rem;
+        text-align: left;
+        background-color: #8e001c;
+
+   }
+   
+
 }
