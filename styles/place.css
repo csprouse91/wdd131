@@ -47,7 +47,7 @@ main {
 }
 
 .card {
-    background-color: grey(0, 0, 0, 0.5);
+    background-color: hsl(0, 9%, 87%);
     border-bottom: 1px solid var(--primary-color);
 
 }
