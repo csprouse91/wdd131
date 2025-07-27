@@ -43,7 +43,7 @@ main {
 }
 
 .card {
-    background-color: light grey;
+    background-color: grey(0, 0, 0, 0.5);
     border-bottom: 1px solid #8e001c;
 
 }
@@ -57,7 +57,7 @@ main {
 .card ul {
     list-style-type: none;
     padding: 5px;
-    grid-template-columns: 1 fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .card ul li {
