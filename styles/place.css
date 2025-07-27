@@ -5,6 +5,10 @@
 #ffb302
 
 */
+:root {
+    --primary-color: #8e001c; /* Dark Red */
+    --secondary-color: #ffb302; /* Yellow */
+}
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +21,8 @@ body {
 }
 
 header {
-    background-color: #8e001c;
-    color: #ffb302;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 20px;
     text-align: center;
 }
@@ -32,19 +36,19 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-top: .5rem solid #ffb302;
-    
+    border-top: .5rem solid var(--secondary-color);
+
 }
 
 .hero img {
     width: 100%;
     height: auto;
-    border-bottom: .25rem solid #8e001c;
+    border-bottom: .25rem solid var(--primary-color);
 }
 
 .card {
     background-color: grey(0, 0, 0, 0.5);
-    border-bottom: 1px solid #8e001c;
+    border-bottom: 1px solid var(--primary-color);
 
 }
 
@@ -96,8 +100,8 @@ main {
 }
 
 footer {
-    background-color: #8e001c;
-    color: #ffb302;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
 }
 
@@ -137,12 +141,12 @@ footer {
     }
     .card {
         background-color: hsla(180, 40%, 45%, 0.8);
-        border: 1px solid #8e001c;
+        border: 1px solid var(--primary-color);
     }
    .card h2 {
         font-size: 1.5rem;
         text-align: left;
-        background-color: #8e001c;
+        background-color: var(--primary-color);
 
    }
    
