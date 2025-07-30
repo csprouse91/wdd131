@@ -102,7 +102,8 @@ const temples = [
   }
 ];
 
-
+// Variable to hold the h2 element for each filter
+const templesHeader = document.querySelector('main h2');
 // Create temple cards looping through the array of temple objects
 const templeContainer = document.querySelector('.container');
 createTempleCard(temples);
@@ -124,6 +125,7 @@ function createTempleCard(temples) {
 // Event listener for "Home" link to load all temples
 const allTemplesLink = document.querySelector('a[title="Home"]');
 allTemplesLink.addEventListener('click', () => {
+  templesHeader.textContent = 'Home';
   templeContainer.innerHTML = '';
   createTempleCard(temples);
 });
@@ -132,6 +134,7 @@ allTemplesLink.addEventListener('click', () => {
 // Old - temples built before 1900
 const oldTemplesLink = document.querySelector('a[title="Old"]');
 oldTemplesLink.addEventListener('click', () => {
+  templesHeader.textContent = 'Old Temples';
   templeContainer.innerHTML = '';
   const oldTemples = temples.filter(temple => temple.dedicated.split(',')[0] < 1900);
   createTempleCard(oldTemples);
@@ -140,6 +143,7 @@ oldTemplesLink.addEventListener('click', () => {
 // New - temples built after 2000
 const newTemplesLink = document.querySelector('a[title="New"]');
 newTemplesLink.addEventListener('click', () => {
+  templesHeader.textContent = 'New Temples';
   templeContainer.innerHTML = '';
   const newTemples = temples.filter(temple => temple.dedicated.split(',')[0] >= 2000);
   createTempleCard(newTemples);
@@ -147,6 +151,7 @@ newTemplesLink.addEventListener('click', () => {
 // Large – temples larger than 90,000 square feet
 const largeTemplesLink = document.querySelector('a[title="Large"]');
 largeTemplesLink.addEventListener('click', () => {
+  templesHeader.textContent = 'Large Temples';
   templeContainer.innerHTML = '';
   const largeTemples = temples.filter(temple => temple.area > 90000);
   createTempleCard(largeTemples);
@@ -154,6 +159,7 @@ largeTemplesLink.addEventListener('click', () => {
 // Small – temples smaller than 10,000 square feet
 const smallTemplesLink = document.querySelector('a[title="Small"]');
 smallTemplesLink.addEventListener('click', () => {
+  templesHeader.textContent = 'Small Temples';
   templeContainer.innerHTML = '';
   const smallTemples = temples.filter(temple => temple.area < 10000);
   createTempleCard(smallTemples);
