@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+}
+
+main {
+    max-width: 95vw;
+}
+
+header {
+    display: flex;
+    background-color: var(--top);
+    color: var(--text);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--top);
+    padding: 1rem;
+}
+
+main {
+    margin: 0 auto;
+}
+
+footer {
+    font-size: .75rem;
+    background-color: var(--top);
+    color: var(--text);
+    text-align: center;
+    padding: .5rem;
+}
+
+/* small navigation */
+#menu {
+    font-size: 2rem;
+    font-weight: 700;
+    border: 0;
+    background: none;
+    color: var(--text);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    text-decoration: none;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.open::before {
+    content: '✖';
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.navigation a {
+    display: none;
+    padding: .75rem;
+    text-decoration: none;
+    color: var(--text);
+    text-align: center;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    background-color: var(--moonstone);
+}
+
+.open a {
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-gap: 15px;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.temple-card {
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* CSS HSL */
+:root {
+    --text: hsla(220, 8%, 92%, 1);
+    --top: hsla(194, 100%, 27%, 1);
+    --background: hsla(197, 21%, 70%, 1);
+    --titlebackground: hsla(193, 100%, 28%, 1);
+    --nav: hsla(188, 99%, 38%, 1);
+}
