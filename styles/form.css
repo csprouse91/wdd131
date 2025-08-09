@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+h1 {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: #18507e;
+    color: #fff;
+}
+
+main {
+    margin: 0 2%;
+    min-height: 20rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #18507e;
+    color: #fff;
+}
+
+.optional {
+    color: #18507e;
+}
+
+.check-all-that-apply {
+    font-style: italic;
+}
+
+.product-review-form {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem 2%;
+}
+
+.product-review-form label {
+    color: #333;
+    font-family: 'Lucida Sans', sans-serif;
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.product-review-form div:not(.rating-options) {
+    padding-top: 1rem;
+    color: #333;
+    font-size: 1rem;
+}
+
+.product-review-form input[type="text"],
+.product-review-form input[type="date"],
+.product-review-form select, 
+.product-review-form textarea[id="writtenReview"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.product-review-form textarea[id="writtenReview"] {
+    min-height: 10rem;
+}
+
+.product-review-form input[type="submit"] {
+
+    background-color: #18507e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: .75rem;
+    max-width: 400px;
+    width: 96%;
+    margin: 1rem 0 0 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.product-review-form input[type="submit"]:hover {
+    background-color: #0f3a6b;
+}
+
+.rating-label:after {
+    content: " (required)";
+    font-style: italic;
+}
+
+.rating-options label:has(input[name="rating"]:not(:checked)) {
+    color: red;
+}
+
+.rating-options label:has(input[name="rating"]:checked) {
+    color: green;
+}
+
+.rating-options label {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.rating-options {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.product-review-form input:required,
+.product-review-form select:required {
+    border-right: solid 6px red;
+}
+
+
+.product-review-form input:required:valid,
+.product-review-form select:required:valid {
+    border-right: solid 6px green;
+}
+
+
+
+@media screen and (max-width: 300px) {
+    .product-review-form {
+        padding: 1rem;
+    }
+
+    .rating-options {
+        flex-direction: column;
+    }
+}
+
+
+/* Review HTML */
+main p {
+    text-align: center;
+    background-color: #18507e;
+    color: #fff;
+}
