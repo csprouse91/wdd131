@@ -64,5 +64,5 @@ function populateAgeGroup() {
 // Review Submission
 const form = document.querySelector(".suform");
 form.addEventListener("submit", (event) => {
-  localStorage.setItem("submitPlayer", "true");
+  localStorage.setItem("submittedPlayer", "true");
 });
