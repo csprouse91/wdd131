@@ -4,21 +4,69 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign Up Form for Bountiful Baseball">
+    <meta name="author" content="Casey Sprouse">
     <title>Sign Up for Bountiful Baseball</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Work+Sans:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/signup.js" defer></script>
  </head>
  <body>
-    <h1>Sign Up for Bountiful Baseball</h1>
-    <form method="get" action="review.html" class="suform">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+   <header>
+        <figure id="logo">
+            <img src="images/bblogoss.webp" alt="Bountiful Baseball Logo" width="100" height="100">
+        </figure>
+        <span>Bountiful Baseball</span>
+        <a href="#" id="menu"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="/project/projectindex.html" class="active">About</a></li>
+                <li><a href="/project/teams.html">Teams</a></li>
+                <li><a href="/project/contact.html">Contact Us</a></li>
+                <li><a href="/project/signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+   </header>
+   <main>
+      <h1>Sign My Player Up</h1>
+      <form method="get" action="review.html" class="suform">
+            <label>Player Name: <input type="text" id="pname" name="pname" required></label>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+            <label>Email: <input type="email" id="email" name="email" required></label>
+            <label>Phone Number: <input type="tel" id="phone" name="phone" required placeholder="1234567890"></label>
+            <label>Date of Birth 
+               <input type="date" id="dob" name="dob" required>
+            </label>
+            <label> Age Group:
+               <span id="ageGroupText">Based on age of player on Aug 31 of the current year</span>
+               <select name="ageGroup" id="ageGroup" required>
+                  <option value="" disabled selected>Choose an Age Group ... </option>
+                  <!-- Dynamically Add Options Here -->
+               </select>
+            </label>
+            
+            <label>Preferred Positions <span class="optional">(Optional)</span>
+               <select name="positions" id="positions" multiple>
+                  <option value="" disabled selected>Choose Area ...</option>
+                  <!-- Dynamically Add Area Options Here -->
+               </select>
+            </label>
 
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required>
+            <label>Comments / Concerns<span class="optional">(Optional)</span>
+               <textarea name="comments" id="comments" placeholder="Enter any additional comments or concerns here..."></textarea>
+            </label>
 
-        <input type="submit" value="Play Ball!">
-    </form>
+            <input type="submit" value="Play Ball!">
+      </form>
+   </main>
+      <footer>
+         <p>&copy;<span id="currentyear"></span> | Casey Sprouse | Utah, USA</p>
+         <p id="lastModified"></p>
+      </footer>
  </body>
  </html>

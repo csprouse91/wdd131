@@ -20,6 +20,11 @@
 --moss-green: hsla(66, 47%, 43%, 1);
 /* Reference: https://coolors.co/a31621-fdfffc-6d8a96-1b1b1e-96a13a */
 }
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
 /* Header */
 #logo {
     margin-right: 1rem;
@@ -123,8 +128,12 @@ footer {
 .reference a:hover {
     background-color: var(--background);
 }
+#hero-img {
+    width: 100%;
+    height: auto;
+}
 /* Large Navigation */
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     #menu {
         display: none;
     }
@@ -170,10 +179,6 @@ footer {
     }
 }
 
-body {
-    font-family: 'Work Sans', sans-serif;
-    background-color: var(--background);
-    color: var(--text);
-}
+
 
 
