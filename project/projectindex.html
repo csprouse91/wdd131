@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Baseball Landing Page - Project for WDD 131">
+    <meta name="author" content="Casey Sprouse">
+    <title>Bountiful Baseball Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Work+Sans:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <figure id="logo">
+            <img src="images/bblogoss.webp" alt="Bountiful Baseball Logo" width="100" height="100">
+        </figure>
+        <span>Bountiful Baseball</span>
+        <a href="#" id="menu"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="/project/projectindex.html" class="active">About</a></li>
+                <li><a href="/project/teams.html">Teams</a></li>
+                <li><a href="/project/contact.html">Contact Us</a></li>
+                <li><a href="/project/signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card" id="cta">
+            <div class="cta-image">
+                <picture>
+                    <source media="(min-width: 640px)" srcset="images/signuphero.webp" alt="Sign Up Large" loading="lazy">
+                    <img id="signup-image" src="images/signuphero-small.webp" alt="Sign Up Small" loading="lazy" >
+                </picture>
+            </div>
+            <div class="cta-text">
+                <h2>Sign Up for the League Today!</h2>
+                <p>We welcome players of all ages! We promote teamwork and sportsmanship, and strive for excellence and improvement from all our players. 
+                    Whether you're a beginner or a well-seasoned player, we have a place for you on our teams. 
+                </p>
+                <button class="signup-button">Sign Up</button>
+            </div>
+        </section>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="/project/images/hero-large.webp" alt="Large Baseball Glove with Baseball" loading="lazy">
+                <source media="(min-width: 500px)" srcset="/project/images/hero-medium.webp" alt="Medium Baseball Glove with Baseball" loading="lazy">
+                <img id="hero-img" src="/project/images/hero-small.webp" alt="Small Baseball Glove with Baseball" loading="lazy" >
+            </picture>
+        </div>
+        <div class="announcement-banner">
+            <p>Upcoming Events: <span id="event1">Opening Day - April 15</span>, <span id="event2">First Game - April 20</span></p>
+        </div>
+        <section class="card" id="upcomingEvents">
+            <h2>Upcoming Events</h2>
+            <ul id="eventList">
+                <li>
+                    <label id="event1"></label><span>Tuesday @ 5:00pm | Minor Field</span>
+                </li>
+                <li>
+                    <label id="event2"></label><span>Tuesday @ 6:00pm | Major Field</span>
+                </li>
+                <li>
+                    <label id="event3"></label><span>Wednesday @ 5:00pm | Minor Field</span>
+                </li>
+                <li>
+                    <label id="event4"></label><span>Wednesday @ 6:00pm | Major Field</span>
+                </li>
+                <li>
+                    <label id="event5"></label><span>Thursday @ 5:00pm | Minor Field</span>
+                </li>
+                <li>
+                    <label id="event6"></label><span>Thursday @ 6:00pm | Major Field</span>
+                </li>
+            </ul>
+        </section>
+        <section class="card" id="weather">
+            <h2>Weather Forecast</h2>
+            <img src="../images/weather.svg" alt="Weather Icon" id="weatherIcon">
+            <ul id="weatherData">
+                <li>
+                    <label>Monday:</label><span>Sunny, 75°F</span>
+                </li>
+                <li>
+                    <label>Tuesday:</label><span>Partly Cloudy, 72°F</span>
+                </li>
+                <li>
+                    <label>Wednesday:</label><span>Rain Showers, 68°F</span>
+                </li>
+                <li>
+                    <label>Thursday:</label><span>Thunderstorms, 70°F</span>
+                </li>
+                <li>
+                    <label>Friday:</label><span>Sunny, 78°F</span>
+                </li>
+            </ul> 
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Casey Sprouse | USA</p>
+        <p id="lastModified"></p>
+        <p class="reference"><a href="https://www.pexels.com/photo/white-rectangular-board-on-brown-textile-3945362/"> CTA Image Source</a></p>
+        <p class="reference"><a href="https://www.pexels.com/photo/white-baseball-ball-on-brown-leather-baseball-mitt-1661950/"> Hero Image Source</a></p>
+
+    </footer>
+</body>
+</html>
