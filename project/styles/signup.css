@@ -1,0 +1,99 @@
+
+:root {
+    /* CSS HEX */
+--primary: #a31621ff;
+--background: #fdfffcff;
+--accent1: #6d8a96ff;
+--accent2: #122241;
+--text: #1b1b1eff;
+--moss-green: #96a13aff;
+
+/* CSS HSL */
+--primary: hsla(355, 76%, 36%, 1);
+--background: hsla(100, 100%, 99%, 1);
+--accent1: hsla(198, 16%, 51%, 1);
+--accent2: hsla(219.6, 56.6%, 16.3%, 1);
+--text: hsla(240, 5%, 11%, 1);
+--moss-green: hsla(66, 47%, 43%, 1);
+/* Reference: https://coolors.co/a31621-fdfffc-6d8a96-1b1b1e-96a13a */
+}
+.sUpMain {
+    margin: 0 2%;
+    min-height: 20rem;
+}
+.sUpMain h1 {
+    text-align: center;
+}
+.suform {
+    margin: 2rem 0;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    padding: 1rem 2%;
+}
+
+.suform label {
+    color: var(--text);
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+#ageGroupText {
+    display: block;
+    margin-bottom: .75rem;
+    font-style: italic;
+}
+.optional {
+    font-size: .875rem;
+    font-style: italic;
+}
+
+.suform input[type="text"],
+.suform input[type="date"],
+.suform input[type="email"],
+.suform input[type="tel"],
+.suform textarea[id="positions"],
+.suform textarea[id="comments"],
+.suform select {
+    
+    display: block;
+    border: solid 1px var(--accent1);
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--text);
+    width: 100%;
+    max-width: 400px;
+}
+
+.suform textarea[id="comments"] {
+    min-height: 10rem;
+}
+
+.suform input:required,
+.suform select:required {
+    border-right: solid 6px red;
+}
+
+
+.suform input:required:valid,
+.suform select:required:valid {
+    border-right: solid 6px green;
+}
+
+.suform input[type="submit"] {
+
+    background-color: var(--accent2);
+    color: var(--background);
+    border: none;
+    border-radius: 6px;
+    padding: .75rem;
+    max-width: 400px;
+    width: 96%;
+    margin: 1rem 0 0 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.suform input[type="submit"]:hover {
+    background-color: var(--primary);
+}

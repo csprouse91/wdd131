@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign Up Review for Bountiful Baseball">
+    <meta name="author" content="Casey Sprouse">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Work+Sans:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/signup.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/signup.js" defer></script>
+    <script src="scripts/reviewsignup.js" defer></script>
+    <title>Review Page after Signing Up a Player</title>
+</head>
+<body>
+    <header>
+        <figure id="logo">
+            <img src="images/bblogoss.webp" alt="Bountiful Baseball Logo" width="100" height="100">
+        </figure>
+        <span>Bountiful Baseball</span>
+        <a href="#" id="menu"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="/project/projectindex.html" class="active">About</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="/project/contactus.html">Contact Us</a></li>
+                <li><a href="/project/signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Your Player has been Signed Up!</h1>
+        <p id="reviews"></p>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Casey Sprouse | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

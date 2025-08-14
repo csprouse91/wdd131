@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Baseball Contact page">
+    <meta name="author" content="Casey Sprouse">
+    <title>Contact Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Work+Sans:ital@0;1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <figure id="logo">
+            <img src="images/bblogoss.webp" alt="Bountiful Baseball Logo" width="100" height="100">
+        </figure>
+        <span>Bountiful Baseball</span>
+        <a href="#" id="menu"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="/project/projectindex.html" class="active">About</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="/project/contact.html">Contact Us</a></li>
+                <li><a href="/project/signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contactus">
+        <div class="contacthero">
+            <h1>Reach Our Team</h1>
+            <p>If you have any questions or need assistance, please don't hesitate to contact us!</p>
+        </div>
+        <div class="contacts">
+            <figure class="contact">
+                <img src="images/director.webp" alt="Director Casey Sprouse">
+                <h3>Casey Sprouse</h3>
+                <figcaption>Director
+                    <br>
+                    E-Mail: <a href="mailto:casey@bountifulbaseball.com">casey@bountifulbaseball.com</a>
+                    <br>
+                    Call or Text: (123) 456-7890
+                </figcaption>
+            </figure>
+            <figure class="contact">
+                <img src="images/adirector.webp" alt="Assistant Director Keisha Sprouse">
+                <h3>Keisha Sprouse</h3>
+                <figcaption>Assistant Director
+                    <br>
+                    E-Mail: <a href="mailto:keisha@bountifulbaseball.com">keisha@bountifulbaseball.com</a>
+                    <br>
+                    Call or Text: (123) 456-7891
+                </figcaption>
+            </figure>
+        </div>
+        <section class="leagueinfo-container">
+            <div class="leagueinfo">
+                <h2>League Information</h2>
+                <p>1234 Baseball Ave</p>
+                <p>Bountiful, UT 12345</p>
+                <p>Phone: (123)455-7890</p>
+                <p>Email: info@bountifulbaseball.com</p>
+            </div>
+            <div class="leagueinfo map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17062.59334439495!2d-111.86394212529439!3d40.88791677006812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1755211656935!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Casey Sprouse | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

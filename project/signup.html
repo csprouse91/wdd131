@@ -13,6 +13,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/signup.css">
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/signup.js" defer></script>
  </head>
@@ -26,15 +27,15 @@
         <nav>
             <ul class="navigation">
                 <li><a href="/project/projectindex.html" class="active">About</a></li>
-                <li><a href="/project/teams.html">Teams</a></li>
-                <li><a href="/project/contact.html">Contact Us</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="/project/contactus.html">Contact Us</a></li>
                 <li><a href="/project/signup.html">Sign Up</a></li>
             </ul>
         </nav>
    </header>
-   <main>
+   <main class="sUpMain">
       <h1>Sign My Player Up</h1>
-      <form method="get" action="review.html" class="suform">
+      <form method="get" action="reviewsignup.html" class="suform">
             <label>Player Name: <input type="text" id="pname" name="pname" required></label>
 
             <label>Email: <input type="email" id="email" name="email" required></label>
@@ -50,14 +51,11 @@
                </select>
             </label>
             
-            <label>Preferred Positions <span class="optional">(Optional)</span>
-               <select name="positions" id="positions" multiple>
-                  <option value="" disabled selected>Choose Area ...</option>
-                  <!-- Dynamically Add Area Options Here -->
-               </select>
+            <label>Preferred Positions<span class="optional"> (Optional)</span>
+               <textarea name="positions" id="positions" placeholder="Example: Pitcher, Catcher, Outfield, Infield, etc"></textarea>
             </label>
 
-            <label>Comments / Concerns<span class="optional">(Optional)</span>
+            <label>Comments / Concerns<span class="optional"> (Optional)</span>
                <textarea name="comments" id="comments" placeholder="Enter any additional comments or concerns here..."></textarea>
             </label>
 

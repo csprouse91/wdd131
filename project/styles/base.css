@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root {
     /* CSS HEX */
@@ -24,6 +25,8 @@ body {
     font-family: 'Work Sans', sans-serif;
     background-color: var(--background);
     color: var(--text);
+    max-width: 1920px;
+    padding: 15px;
 }
 /* Header */
 #logo {
@@ -62,9 +65,11 @@ h2 {
 }
 #menu::before {
     content: '☰';
+    color: var(--background);
 }
 #menu.open::before {
     content: '✖';
+    color: var(--background);
 }
 nav {
     color: var(--background);
@@ -80,6 +85,7 @@ nav {
 }
 .navigation a {
     text-decoration: none;
+    display: none;
     color: var(--background);
     text-align: center;
     padding: 1rem;
@@ -103,7 +109,7 @@ nav {
 }
 .signup-button {
     text-decoration: none;
-    background-color: var(--accent1);
+    background-color: var(--accent2);
     cursor: pointer;
     font-size: 1.5rem;
     padding: 10px;
@@ -114,6 +120,29 @@ nav {
 .signup-button:focus {
     background-color: var(--primary);
 }
+.announcement-banner {
+    background-color: var(--accent1);
+    color: var(--background);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+#upcomingEvents {
+    align-self: center;
+}
+#weather {
+    align-self: center;
+}
+#eventList,
+#weatherData {
+    list-style: none;
+    font-size: 1.2rem;
+}
 
 footer {
     background-color: var(--accent2);
@@ -122,11 +151,11 @@ footer {
     text-align: center;
 }
 .reference a {
-    color: var(--primary);
+    color: var(--background);
     text-decoration: none;
 }
 .reference a:hover {
-    background-color: var(--background);
+    border: 1px solid var(--primary);
 }
 #hero-img {
     width: 100%;
@@ -137,7 +166,7 @@ footer {
     #menu {
         display: none;
     }
-    main h1 {
+    .landing-page h1 {
         font-size: 2.5rem;
         margin: 0 auto;
         text-align: center;
